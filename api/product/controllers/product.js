@@ -7,10 +7,4 @@ const { default: createStrapi } = require("strapi");
  * to customize this controller
  */
 
-module.exports = {
-  async find (ctx) {
-    const products = await strapi.services.product.find(ctx.query)
-
-    return products.map(product => product.title)
-  }
-};
+module.exports = {};
