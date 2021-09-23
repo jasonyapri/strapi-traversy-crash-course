@@ -5,4 +5,11 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+  lifecycles: {
+    afterFind(results, params, populate) {
+      console.log('After Fetch...')
+      console.log(results)
+    }
+  }
+};
